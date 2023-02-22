@@ -1,0 +1,335 @@
+/* Landing Page css 
+=========================================================////=======================================////=================================== */
+@font-face {
+    font-family: 'architype_bold';
+    src: url('webfontkit-20230221-020521/archityperenner-bold-webfont.woff2') format('woff2'),
+         url('webfontkit-20230221-020521/archityperenner-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'architype_demi';
+    src: url('webfontkit-20230221-020521/archityperenner-demi-webfont.woff2') format('woff2'),
+         url('webfontkit-20230221-020521/archityperenner-demi-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'architype_medium';
+    src: url('webfontkit-20230221-020521/archityperenner-medium-webfont.woff2') format('woff2'),
+         url('webfontkit-20230221-020521/archityperenner-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'architype_regular';
+    src: url('webfontkit-20230221-020521/archityperenner-regular-webfont.woff2') format('woff2'),
+         url('webfontkit-20230221-020521/archityperenner-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'tw_regular';
+    src: url('webfontkit-20230221-021519/twcenclassmtstd-regular-webfont.woff2') format('woff2'),
+         url('webfontkit-20230221-021519/twcenclassmtstd-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'tw_bold';
+    src: url('webfontkit-20230221-021519/twcenmtstd-bold-webfont.woff2') format('woff2'),
+         url('webfontkit-20230221-021519/twcenmtstd-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'tw_medium';
+    src: url('webfontkit-20230221-021519/twcenmtstd-mediumcond-webfont.woff2') format('woff2'),
+         url('webfontkit-20230221-021519/twcenmtstd-mediumcond-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+:root{
+    --light-green:#048f60;
+    --dark-green:#047b53;
+    --yellow:#fef661;
+    --light-black:#9c9b9d;
+    }
+h2{
+    color:black;
+    
+}
+h3{
+    font-family: architype_demi;
+}
+button{
+    border: none;
+}
+
+
+/*Navigation bar css ====================================================================================== */
+/* .lp-navigation-bar{
+    background-image: url("top1.jpg");
+    background-repeat: no-repeat;
+    background-size:250px;
+    background-position-x:80px ;
+    background-position-y:20px ;
+    
+    
+} */
+ 
+.smarTech{
+    color: var(--dark-green);
+}
+.navbar-brand{
+    font-family: 'architype_demi';
+    font-size: 48px;
+    padding:35px 5px 15px;
+    
+    
+}
+
+.logo-bg img{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    width: 330px;
+    height: auto;
+}
+    
+
+.navbar-light .navbar-nav .nav-link{
+    list-style-type: none;
+    color: #000000;
+    font-family: 'tw_regular';
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: var(--dark-green);
+}
+.lp-navigation ul {
+    gap:20px;
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: var(--dark-green);
+    
+}
+.navbar-light .navbar-nav .nav-link.active::after{
+    content: '\f111';
+    font-family: fontawesome;
+    display: block;
+    text-align: center;
+    font-size: 5px;
+}
+@media only screen and (max-width: 991px){
+    .navbar-light .navbar-nav .nav-link.active::after{
+        display: none;
+    }  
+}
+/*Nav section end============================================================== */
+
+/*Banner-section start========================================================= */
+.banner-title{
+    color: var(--dark-green);
+    margin-top:7.5em;
+}
+.banner-heading h2{
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: bolder;
+    font-family: 'architype_demi';
+
+}
+.banner-description p{
+    font-size: 12px;
+font-weight:500;
+}
+.button-first button{
+    background-color: var(--dark-green);
+    color: white;
+    width: 11.25em;
+    height: 3.25em;
+    border-radius:10px;
+    text-align: center;
+}
+
+.button-first{
+    display: flex;
+}
+.learn-more-button{
+    margin-left: 2em;
+}
+.lcd-tv{
+    margin-top: 7.5em;
+}
+.horizontal-line-1{
+    margin-top: 4em;
+    border-top: 2px solid var(--dark-green);
+}
+.horizontal-line-1 h5,.horizontal-line-2 h5{
+    padding-top: 2em;
+    color: var(--dark-green);
+    font-family: 'tw_bold';
+    font-size:medium;
+    font-weight: 100;
+}
+.horizontal-line-2{
+    margin-top: 4em;
+    border-top: 2px solid var(--dark-green);
+    margin-left: 3em;
+}
+.horizontal-line-1 p, .horizontal-line-2 p{
+    font-family: 'tw_medium';
+    color: var(--light-black);
+    font-size:medium ;
+    font-weight: 300;
+}
+/* Banner section end================================================ */
+
+/* Quote section start ========================================== */
+.quote-section{
+    background-color: #03724d;
+    position: relative;
+    padding: 100px;
+}
+.quote-title h4, .quote-topic h3, .quote-description p{
+    text-align: center;
+    color: #ffffff;
+    padding-left: 3em;
+}
+.quote-topic,.quote-description{
+    padding-top: 1em;
+}
+
+.quote-title h4{
+    color: #9cc8b9; 
+}
+.quote-description p{
+    color: #d3e8df;
+}
+.quote-topic h3{
+    font-size: 36px;
+}
+.quote-bg img{
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 150px;
+    z-index: 2;
+    
+}
+.quote-bg1 img{
+    transform: rotate(180deg);
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/*quote section end =============================//================================================ /*
+
+/*Package section start =========================//=========================== */
+.package{
+    position: relative;
+}
+.package-paragraph span{
+    color: var(--dark-green);
+}
+.package-paragraph h2{
+    margin-top: 150px;
+    font-family: architype_bold;
+    font-size: 44px;
+    line-height: 1.5em ;
+    font-weight:600;
+    
+}
+
+/* for the light bulb icon ============== */
+.lightBulb{
+    color: var(--light-green);
+    background-color:#daebe4 ;
+    border-radius: 35%;
+    padding: 5px 12px 12px 12px;
+}
+.firstPackage{
+    margin-top: 125px;
+    box-shadow: 4px 3px 13px 0px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 4px 3px 13px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 4px 3px 13px 0px rgba(0,0,0,0.4);
+    border-radius: 8%;
+    padding: 20px;
+    }
+.firstPackage h2 {
+    margin-top:20px ;
+    color: rgb(37, 36, 36);
+    font-family: 'tw_bold';
+    font-size:28px ;
+    font-weight: 700px;
+}
+.firstPackage p{
+    font-family: tw_regular;
+    font-size: 12px;
+    font-weight: 400px;
+    color: var(--light-black);
+}
+.firstPackage h3 span, .secondPackage h3 span{
+    font-size: 24px;
+    font-weight: 100;
+}
+.firstPackage h3{
+    font-size: 38px;
+    font-weight: 700;
+}
+.button-first-getStarted button{
+    background-color: white;
+    color:var(--dark-green);
+    width: 11.25em;
+    height: 3.25em;
+    border-radius:10px;
+    text-align: center;
+    font-weight: 600;
+}
+.secondPackage{
+    background-color: var(--dark-green);
+    margin-top: 150px;
+    border-radius: 5%;
+    padding: 20px;
+}
+.secondPackage h2{
+    color: white;
+    margin-top:20px ;
+    font-family: 'tw_bold';
+    font-size:28px ;
+    font-weight: 700px;
+}
+
+.secondPackage h3{
+    color: white;
+    font-size: 38px;
+    font-weight: 700;
+}
+.secondPackage p{
+    color: white;
+}
+.diamond{
+    color: var(--light-green);
+    background-color:#daebe4 ;
+    border-radius: 35%;
+    padding: 5px 12px 12px 12px;
+}
+.package-section-bg img{
+    width: 200px;
+    position: absolute;
+    left: 0;
+}
+
+
+
+
+
