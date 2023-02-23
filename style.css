@@ -116,7 +116,7 @@ p{
     color: var(--dark-green);
 }
 .lp-navigation ul {
-    gap:20px;
+    gap:10px;
 }
 .navbar-light .navbar-nav .nav-link.active{
     color: var(--dark-green);
@@ -137,22 +137,22 @@ p{
 /*Nav section end============================================================== */
 
 /*Banner-section start========================================================= */
-.banner-title{
+.lp-banner-title{
     color: var(--dark-green);
-    margin-top:7.5em;
+    margin-top:7em;
 }
-.banner-heading h2{
-    font-size: 48px;
-    line-height: 60px;
+.lp-banner-heading h2{
+    font-size: 56px;
+    line-height: 70px;
     font-weight: bolder;
     font-family: 'architype_demi';
 
 }
-.banner-description p{
+.lp-banner-description p{
     font-size: 12px;
 font-weight:500;
 }
-.button-first button{
+.lp-button-first button{
     background-color: var(--dark-green);
     color: white;
     width: 11.25em;
@@ -161,61 +161,65 @@ font-weight:500;
     text-align: center;
 }
 
-.button-first{
+
+
+.lp-button-first{
     display: flex;
+    padding: 10px;
 }
 .learn-more-button{
-    margin-left: 2em;
+    margin-left: 1.5em;
 }
 .lcd-tv{
-    margin-top: 7.5em;
+    float: right;
 }
-.horizontal-line-1{
+.lp-horizontal-line-1{
     margin-top: 4em;
     border-top: 2px solid var(--dark-green);
 }
-.horizontal-line-1 h5,.horizontal-line-2 h5{
+.lp-horizontal-line-1 h4,.lp-horizontal-line-2 h4{
     padding-top: 2em;
     color: var(--dark-green);
     font-family: 'tw_bold';
-    font-size:medium;
+    font-size:20px;
     font-weight: 100;
+
 }
-.horizontal-line-2{
+.lp-horizontal-line-2{
     margin-top: 4em;
     border-top: 2px solid var(--dark-green);
     margin-left: 3em;
 }
-.horizontal-line-1 p, .horizontal-line-2 p{
-    font-family: 'tw_medium';
+.lp-horizontal-line-1 p, .lp-horizontal-line-2 p{
+    font-family: 'tw_regular';
     color: var(--light-black);
-    font-size:medium ;
-    font-weight: 300;
+    font-size:12px ;
+    font-weight: 100;
 }
 /* Banner section end================================================ */
 
 /* Quote section start ========================================== */
-.quote-section{
+.lp-quote-section{
     background-color: #03724d;
     position: relative;
     padding: 100px;
 }
-.quote-title h4, .quote-topic h3, .quote-description p{
+.lp-quote-title h4, .lp-quote-topic h3, .lp-quote-description p{
     text-align: center;
     color: #ffffff;
     padding-left: 3em;
 }
-.quote-topic,.quote-description{
+.lp-quote-topic,.lp-quote-description{
     padding-top: 1em;
 }
 
-.quote-title h4{
+.lp-quote-title h4{
     color: #9cc8b9; 
 }
-.quote-description p{
+.lp-quote-description p{
     color: #d3e8df;
 }
-.quote-topic h3{
+.lp-quote-topic h3{
     font-size: 36px;
 }
 .quote-bg img{
@@ -237,7 +241,7 @@ font-weight:500;
 /*quote section end =============================//================================================ /*
 
 /*Package section start =========================//=========================== */
-.package{
+.lp-package{
     position: relative;
 }
 .package-paragraph span{
@@ -261,20 +265,22 @@ font-weight:500;
 }
 .firstPackage{
     margin-top: 125px;
-    box-shadow: 4px 3px 13px 0px rgba(0,0,0,0.4);
-    -webkit-box-shadow: 4px 3px 13px 0px rgba(0,0,0,0.4);
-    -moz-box-shadow: 4px 3px 13px 0px rgba(0,0,0,0.4);
-    border-radius: 8%;
-    padding: 20px;
+    box-shadow: -1px 1px 0px 4px rgba(0,0,0,0.09);
+-webkit-box-shadow: -1px 1px 0px 4px rgba(0,0,0,0.09);
+-moz-box-shadow: -1px 1px 0px 4px rgba(0,0,0,0.09);
+border-radius: 8%;
+    padding-top: 20px ;
+    margin-bottom: 3.2em;
+
     }
-.firstPackage h2 {
+.firstPackage h2, .secondPackage h2 {
     margin-top:20px ;
     color: rgb(37, 36, 36);
     font-family: 'tw_bold';
     font-size:32px ;
     font-weight: 800px;
 }
-.firstPackage p{
+.firstPackage p, .secondPackage p{
     font-family: tw_regular;
     font-size: 12px;
     font-weight: 400px;
@@ -284,41 +290,19 @@ font-weight:500;
     font-size: 24px;
     font-weight: 100;
 }
-.firstPackage h3{
+.firstPackage h3, .secondPackage h3{
     font-size: 38px;
     font-weight: 700;
-}
-.button-first-getStarted button{
-    background-color: white;
-    color:var(--dark-green);
-    width: 11.25em;
-    height: 3.25em;
-    border-radius:10px;
-    text-align: center;
-    font-weight: 600;
 }
 .secondPackage{
-    background-color: var(--dark-green);
+    /* background-color: var(--dark-green); */
     margin-top: 150px;
-    border-radius: 5%;
-    padding: 20px;
-}
-.secondPackage h2{
-    color: white;
-    margin-top:20px ;
-    font-family: 'tw_bold';
-    font-size:28px ;
-    font-weight: 700px;
+    border-radius: 8%;
+    padding-top: 20px;
+    padding-bottom: 1.5em;
+    border: 2px solid whitesmoke;
 }
 
-.secondPackage h3{
-    color: white;
-    font-size: 38px;
-    font-weight: 700;
-}
-.secondPackage p{
-    color: white;
-}
 .diamond{
     color: var(--light-green);
     background-color:#daebe4 ;
@@ -330,39 +314,87 @@ font-weight:500;
     position: absolute;
     left: 0;
 }
+/*After hover effects for packages=================== */
+.firstPackage:hover, .secondPackage:hover {
+    background-color:var(--dark-green);
+}
+.secondPackage:hover h2, .secondPackage:hover h3, .secondPackage:hover p,
+.firstPackage:hover h2, .firstPackage:hover h3, .firstPackage:hover p
+{
+    color: white;
+}
+.firstPackage:hover .lp-button-first button, .secondPackage:hover .lp-button-first button{
+    background-color: white;
+    color: var(--dark-green);
+}
 /*Package section end==========================//============== /*
 
 /* About us section start=====================//============== */
-.about-us h3{
+.lp-about-us h3{
     text-align: center;
     margin-top: 120px;
     color: var(--dark-green);
 }
-.about-us h2{
+.lp-about-us h2{
     text-align: center;
     font-weight:900;
     font-size: 48px;
 }
-.about-us p{
+.lp-about-us p{
     text-align: center;
     font-size: 12px;
 }
-.about-us p span{
+.lp-about-us p span{
     font-weight: 900;
 }
 /*about us section end ===============================//-====== /*
 
 /* Services section start==================//=============== */
-.monthly-report p{
+.monthly-report p,.customer-service p, .planning-consultation p{
     font-size: 11px;
-    font-weight:200;
+    font-weight:500;
     color: var(--light-black);
 
 }
-.monthly-report {
+.monthly-report,.customer-service,.planning-consultation {
     margin-top: 90px;
 }
+
 /*Servives section end===============/=================== */
 
+/* More services section start==================================//=-======================== */
+.lp-more-services{
+    margin-top:150px ;
+}
+.qr-content, .trading-content, .credit-card-content{
+    margin-left: 4.2em;
+}
+.qr-payment img, .trading img, .credit-card{
+    width: 50px;
+    height: auto;
+}
+.qr-payment{
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 60px 100px 0px;
+    border-radius: 15px;
+    
+}
 
+.virtual-credit-card,.trading-portal{
+    border: 2px solid rgb(247, 242, 242);
+    border-radius: 15px;
+}
+.lp-more-services p{
+    font-family: architype_regular;
+    font-size: 16px;
+    color:var(--light-black);
+}
+
+
+
+.lp-more-services i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 2em;
+}
 
