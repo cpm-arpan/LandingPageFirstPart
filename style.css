@@ -64,7 +64,7 @@
     }
 h2{
     color:black;
-    
+    font-family: architype_demi;
 }
 h3{
     font-family: architype_demi;
@@ -72,7 +72,9 @@ h3{
 button{
     border: none;
 }
-
+p{
+    font-family: tw_regular;
+}
 
 /*Navigation bar css ====================================================================================== */
 /* .lp-navigation-bar{
@@ -269,8 +271,8 @@ font-weight:500;
     margin-top:20px ;
     color: rgb(37, 36, 36);
     font-family: 'tw_bold';
-    font-size:28px ;
-    font-weight: 700px;
+    font-size:32px ;
+    font-weight: 800px;
 }
 .firstPackage p{
     font-family: tw_regular;
@@ -324,12 +326,43 @@ font-weight:500;
     padding: 5px 12px 12px 12px;
 }
 .package-section-bg img{
-    width: 200px;
+    width: 150px;
     position: absolute;
     left: 0;
 }
+/*Package section end==========================//============== /*
 
+/* About us section start=====================//============== */
+.about-us h3{
+    text-align: center;
+    margin-top: 120px;
+    color: var(--dark-green);
+}
+.about-us h2{
+    text-align: center;
+    font-weight:900;
+    font-size: 48px;
+}
+.about-us p{
+    text-align: center;
+    font-size: 12px;
+}
+.about-us p span{
+    font-weight: 900;
+}
+/*about us section end ===============================//-====== /*
 
+/* Services section start==================//=============== */
+.monthly-report p{
+    font-size: 11px;
+    font-weight:200;
+    color: var(--light-black);
+
+}
+.monthly-report {
+    margin-top: 90px;
+}
+/*Servives section end===============/=================== */
 
 
 
