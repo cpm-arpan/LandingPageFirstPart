@@ -34,7 +34,7 @@ $('.lp-featured-products').slick({
 
 $('.testimonial-content').slick({
   dots: true,
-  infinite: false,
+  infinite: true,
   speed: 300,
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -68,3 +68,14 @@ $('.testimonial-content').slick({
     // instead of a settings object
   ]
 });
+
+
+
+
+const accordion = document.getElementsByClassName('container');
+
+for (i=0; i<accordion.length; i++) {
+  accordion[i].addEventListener('click', function () {
+    this.classList.toggle('active')
+  })
+}

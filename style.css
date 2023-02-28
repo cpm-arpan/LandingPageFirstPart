@@ -75,6 +75,7 @@
 h2{
     color:black;
     font-family: architype_demi;
+    font-size: 48px;
 }
 h3{
     font-family: architype_demi;
@@ -162,13 +163,17 @@ p{
     font-size: 12px;
 font-weight:500;
 }
-.lp-button-first button{
+.lp-button-first{
     background-color: var(--dark-green);
     color: white;
     width: 11.25em;
     height: 3.25em;
     border-radius:10px;
     text-align: center;
+}
+.lp-button-first a{
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -213,6 +218,7 @@ font-weight:500;
     background-color: #03724d;
     position: relative;
     padding: 100px;
+    margin-top: 80px;
 }
 .lp-quote-title h4, .lp-quote-topic h3, .lp-quote-description p{
     text-align: center;
@@ -472,6 +478,7 @@ border-radius: 8%;
     font-size: 20px !important;
     padding: 12px;
     border-radius: 10px;
+    margin-left:-20px;
 }
 .slick-next{
     left: 16px !important;
@@ -529,6 +536,162 @@ ul.slick-dots li button::before {
     margin-top: -150px;
     position: relative;
     z-index: 100;
-    overflow: visible !important
-    ;
+    overflow: visible !important;
+}
+.slick-prev:before{
+    margin-left: -30px;
+    opacity: 1 !important;
+}
+/* End of testimonial section */
+
+
+.lp-faq{
+    margin-top: 120px;
+}
+.accordion {
+    width: 800px;
+    margin-top: 35px;
+    color: black;
+    background-color: white;
+    padding: 45px 45px;
+    
+
+    
+    
+  }
+  .accordion .container {
+    position: relative;
+    margin-top: 30px;
+
+    
+  }
+  
+  /* Positions the labels relative to the .container. Adds padding to the top and bottom and increases font size. Also makes its cursor a pointer */
+  
+  .accordion .label {
+    position: relative;
+    padding: 10px 0;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    font-family: tw_bold;
+    font-size: 20px;
+    
+    
+   
+  }
+
+  .accordion .label::before {
+    content: "icofont-plus-circle";
+    color: var(--dark-green);
+    font-family: bootstrap-icons;
+    font-weight: 100;
+    margin-top: 15px;
+    float: right;
+    font-size: 25px;
+    transform: translateY(-50%);
+}
+.accordion-title{
+    font-size: 22px;
+}
+  
+  /* Hides the content (height: 0), decreases font size, justifies text and adds transition */
+  
+  .accordion .content {
+    position: relative;
+    background: white;
+    height: 0;
+    font-size: 16px;
+    margin-left: 60px;
+    width: 600px;
+    overflow: hidden;
+    transition: 0.5s;
+    font-family: tw_medium;
+    font-weight: lighter;
+   color: var(--light-black);
+  }
+  .lp-acc{
+    border: 2px solid var(--dark-green);
+    border-radius: 30px ;
+  }
+  
+
+  /* Unhides the content part when active. Sets the height */
+
+.accordion .container.active .content {
+    height: auto;
+    
+  }
+  .lp-acc{
+    padding: 8px 12px;
+  }
+  .lp-acc .label .accordion-lists{
+    display: flex;
+    column-gap: 35px;
+}
+  
+  /* Changes from plus sign to negative sign once active */
+  
+  .accordion .container.active .label::before {
+    content: 'bi-dash-circle';
+    font-family: bootstrap-icons;
+    font-size: 20px;
+
+    
+ }
+ .accordion .container.active .label{
+    color: var(--dark-green);
+ }
+
+
+/* footer section start ===================================================== */
+
+.footer-services{
+    display: flex;
+}
+.lp-footer-content{
+    margin-top: 200px;
+}
+.lp-footer-content h2 span{
+    color: var(--dark-green);
+}
+.lp-footer-content ul li a{
+    text-decoration: underline;
+    color: var(--light-black);
+}
+.lp-footer-content ul li{
+    list-style-type: none;
+    font-size: 14px;
+    font-family: architype_regular;
+    font-weight: 700;
+}
+.lp-footer-content ul li a:hover{
+    color: var(--dark-green);
+}
+.footer-below{
+    border-top: 2px solid var(--dark-green);
+}
+.footer-below ul{
+    display: flex;
+    column-gap: 20px;
+    width: fit-content;
+    margin-top: 15px;
+    padding-left: 0;
+}
+.social-media-links{
+    display: flex;
+}
+.social-media-links ul li a{
+    color: var(--light-green);
+    
+}
+.social-media-links a:hover{
+    color: var(--dark-green);
+}
+.social-media-links a{
+    column-gap: 20px; 
+
+}
+.social-media-links ul li{
+    list-style-type: none;
 }
