@@ -86,6 +86,9 @@ button{
 p{
     font-family: tw_regular;
 }
+a{
+    text-decoration: none;
+}
 
 /*Navigation bar css ====================================================================================== */
 /* .lp-navigation-bar{
@@ -163,27 +166,26 @@ p{
     font-size: 12px;
 font-weight:500;
 }
-.lp-button-first{
-    background-color: var(--dark-green);
-    color: white;
-    width: 11.25em;
-    height: 3.25em;
-    border-radius:10px;
-    text-align: center;
-}
+/* lp-button-first is for all the linked buttons i.e one in the banner section and two in the package section */
 .lp-button-first a{
-    text-decoration: none;
+    background-color: var(--dark-green);
+    border-radius: 12px;
+    padding: 16px 30px;
     color: white;
+    text-decoration: none;
+    font-family: architype_medium;
+    font-size: 16px;
+    letter-spacing: 1px;
+}  
+.lp-button-first i{
+    margin-left: 2em;
 }
-
-
-
+.lp-button-first a:hover{
+    color: black;
+}
 .lp-button-first{
-    display: flex;
-    padding: 10px;
-}
-.learn-more-button{
-    margin-left: 1.5em;
+    margin-top: 1em;
+    bottom: auto;
 }
 .lcd-tv{
     float: right;
@@ -259,12 +261,13 @@ font-weight:500;
 /*Package section start =========================//=========================== */
 .lp-package{
     position: relative;
+    padding-top: 100px;
 }
 .package-paragraph span{
     color: var(--dark-green);
 }
 .package-paragraph h2{
-    margin-top: 150px;
+    margin-top: 3em;
     font-family: architype_bold;
     font-size: 44px;
     line-height: 1.5em ;
@@ -280,26 +283,26 @@ font-weight:500;
     padding: 5px 12px 12px 12px;
 }
 .firstPackage{
-    margin-top: 125px;
-    box-shadow: -1px 1px 0px 4px rgba(0,0,0,0.09);
+    height: 380px;
+    margin-top: 2em;
+    border: 2px solid whitesmoke;
+    /* box-shadow: -1px 1px 0px 4px rgba(0,0,0,0.09);
 -webkit-box-shadow: -1px 1px 0px 4px rgba(0,0,0,0.09);
--moz-box-shadow: -1px 1px 0px 4px rgba(0,0,0,0.09);
+-moz-box-shadow: -1px 1px 0px 4px rgba(0,0,0,0.09); */
 border-radius: 8%;
-    padding-top: 20px ;
-    margin-bottom: 3.2em;
-
-    }
+padding-top: 20px ;
+}
 .firstPackage h2, .secondPackage h2 {
     margin-top:20px ;
     color: rgb(37, 36, 36);
     font-family: 'tw_bold';
     font-size:32px ;
-    font-weight: 800px;
+    font-weight: 800;
 }
 .firstPackage p, .secondPackage p{
     font-family: tw_regular;
     font-size: 12px;
-    font-weight: 400px;
+    font-weight: 400;
     color: var(--light-black);
 }
 .firstPackage h3 span, .secondPackage h3 span{
@@ -312,10 +315,11 @@ border-radius: 8%;
 }
 .secondPackage{
     /* background-color: var(--dark-green); */
-    margin-top: 150px;
+    margin-top: 4em;
     border-radius: 8%;
     padding-top: 20px;
     padding-bottom: 1.5em;
+    height: 380px;
     border: 2px solid whitesmoke;
 }
 
@@ -326,6 +330,7 @@ border-radius: 8%;
     padding: 5px 12px 12px 12px;
 }
 .package-section-bg img{
+    margin-top: 3em;
     width: 150px;
     position: absolute;
     left: 0;
@@ -339,7 +344,7 @@ border-radius: 8%;
 {
     color: white;
 }
-.firstPackage:hover .lp-button-first button, .secondPackage:hover .lp-button-first button{
+.firstPackage:hover .lp-button-first a, .secondPackage:hover .lp-button-first a{
     background-color: white;
     color: var(--dark-green);
 }
@@ -382,6 +387,13 @@ border-radius: 8%;
 .lp-more-services{
     margin-top:150px ;
 }
+.lp-more-services a{
+    text-decoration: none;
+    color: black;
+}
+.qr-payment:hover, .trading-portal:hover, .virtual-credit-card:hover{
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 60px 100px 0px;
+}
 .qr-content, .trading-content, .credit-card-content{
     margin-left: 4.2em;
 }
@@ -389,13 +401,9 @@ border-radius: 8%;
     width: 50px;
     height: auto;
 }
-.qr-payment{
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 60px 100px 0px;
-    border-radius: 15px;
-    
-}
 
-.virtual-credit-card,.trading-portal{
+
+.virtual-credit-card,.trading-portal, .qr-payment{
     border: 2px solid rgb(247, 242, 242);
     border-radius: 15px;
 }
@@ -455,27 +463,46 @@ border-radius: 8%;
     width: 18rem;
     border-radius: 50px;
 }
+.carousel-cards .card-title{
+    color: black;
+}
+.carousel-cards:hover{
+    box-shadow: -2px 2px 11px 12px rgba(221,221,221,0.75);
+    -webkit-box-shadow: -2px 2px 11px 12px rgba(221,221,221,0.75);
+    -moz-box-shadow: -2px 2px 11px 12px rgba(221,221,221,0.75);  
+}
+.carousel-cards:hover .read-more{
+    color: black;
+}
+.carousel-cards:hover .card-title{
+    color: var(--dark-green);
+}
 .carousel-cards img{
     border-radius: 50px;
     padding: 8px;
     width: 285px;
-    height: 200px;
+    height: auto;
 }
 .slick-prev:before {
-    color: white !important;
-    content: '\f178';
-    font-family:'fontawesome' !important;
-    background-color: #03724d;
+    color: #dbdddd;
+    content: '\F12F';
+    font-size: 25px;
+    font-weight: 600;
+    font-family:'bootstrap-icons' !important;
+    background-color: white;
+    border: 2px solid #dbdddd;
     padding: 12px;
     border-radius: 10px;
-    
-  }
+ }
   .slick-next:before {
     color: var(--dark-green) !important;
-    content: '\f178';
-    font-family:'fontawesome' !important;
-    border: 2px solid #f6f6f5 !important;
-    font-size: 20px !important;
+    content: '\F138';
+    font-family:'bootstrap-icons';
+    font-weight: 600;
+    border: 3px solid #dbdddd;
+    color: white !important;
+    font-size: 25px !important;
+    background-color: var(--dark-green);
     padding: 12px;
     border-radius: 10px;
     margin-left:-20px;
@@ -497,12 +524,25 @@ Start of testimonial section ===================================================
 .lp-testimonial h2{
     text-align: center;
     margin-inline-start: 400px;
+    /* 06a871 04734e */
     font-size: 42px;
 }
 .testimonial-content{
-    background-color: #06a871;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(6,168,113,1) 0%, rgba(4,115,78,1) 100%);
     border-radius: 35px;
 
+}
+.testimonial-content .slick-list{
+    overflow: visible;
+    overflow-x: clip;
+    
+}
+.testimonial-content slick-slide{
+    opacity: 0 !important;
+}
+.testimonial-content .slick-slide.slick-active{
+    opacity: 1 !important;
 }
 .testimonial-content p{
     margin-top: 30px;
@@ -544,105 +584,70 @@ ul.slick-dots li button::before {
 }
 /* End of testimonial section */
 
-
+/* FAQ section and accordion===================================== */
 .lp-faq{
     margin-top: 120px;
 }
-.accordion {
-    width: 800px;
-    margin-top: 35px;
-    color: black;
-    background-color: white;
-    padding: 45px 45px;
-    
-
-    
-    
-  }
-  .accordion .container {
-    position: relative;
-    margin-top: 30px;
-
-    
-  }
-  
-  /* Positions the labels relative to the .container. Adds padding to the top and bottom and increases font size. Also makes its cursor a pointer */
-  
-  .accordion .label {
-    position: relative;
-    padding: 10px 0;
-    font-size: 30px;
-    color: black;
-    cursor: pointer;
-    font-family: tw_bold;
-    font-size: 20px;
-    
-    
-   
-  }
-
-  .accordion .label::before {
-    content: "icofont-plus-circle";
-    color: var(--dark-green);
-    font-family: bootstrap-icons;
-    font-weight: 100;
-    margin-top: 15px;
-    float: right;
-    font-size: 25px;
-    transform: translateY(-50%);
+.lp-accordion.accordion-lists .accordion-number-lists{
+    color:green;
 }
-.accordion-title{
-    font-size: 22px;
-}
-  
-  /* Hides the content (height: 0), decreases font size, justifies text and adds transition */
-  
-  .accordion .content {
-    position: relative;
-    background: white;
-    height: 0;
-    font-size: 16px;
-    margin-left: 60px;
-    width: 600px;
-    overflow: hidden;
-    transition: 0.5s;
-    font-family: tw_medium;
-    font-weight: lighter;
-   color: var(--light-black);
-  }
-  .lp-acc{
-    border: 2px solid var(--dark-green);
-    border-radius: 30px ;
-  }
-  
-
-  /* Unhides the content part when active. Sets the height */
-
-.accordion .container.active .content {
-    height: auto;
-    
-  }
-  .lp-acc{
-    padding: 8px 12px;
-  }
-  .lp-acc .label .accordion-lists{
-    display: flex;
+.lp-accordion .accordion-item  .accordion-header .accordion-lists{
+    display: flex ;
     column-gap: 35px;
 }
-  
-  /* Changes from plus sign to negative sign once active */
-  
-  .accordion .container.active .label::before {
-    content: 'bi-dash-circle';
-    font-family: bootstrap-icons;
-    font-size: 20px;
-
+.lp-accordion .accordion-item{
+    margin-top: 20px;
+    padding-top: 10px;
+    width: 50%;
+    position: relative;
+    top: 10px;
+}
+.accordion-content{
+    border: 2px solid green;
+    border-radius: 40px;
+}
+.lp-accordion .accordion-header{
+    padding:4px 25px;
+}
+.lp-accordion .accordion-button:not(.collapsed){
+    color: green;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+.lp-accordion .accordion-button.collapsed::after{
+    content: 'icofont-plus-circle';
     
- }
- .accordion .container.active .label{
+}
+.lp-accordion .accordion-button:not(.collapsed)::after{
+    content: 'bi-dash-circle';
+}
+.lp-accordion .accordion-button.collapsed::after,
+.lp-accordion .accordion-button:not(.collapsed)::after
+{
+    font-family: bootstrap-icons ;
+    color: green;
+    font-size: 20px;
+    background-image: none;
+}
+.lp-accordion .accordion-number-lists{
+    font-size: 26px;
     color: var(--dark-green);
- }
-
+    font-family: architype_demi;
+}
+.lp-accordion .accordion-title{
+    font-family: architype_demi;
+    font-size: 20px;
+    padding: 2px;
+    color: rgb(24, 23, 23);
+}
+.lp-accordion .content{
+    font-family: tw_medium;
+    font-size: 18px;
+    color:var(--light-black);
+    margin-inline-start: 5em;
+}
+/* End of accordion=====================//============================== */
 
 /* footer section start ===================================================== */
 
