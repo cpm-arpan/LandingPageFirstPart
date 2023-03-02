@@ -72,6 +72,11 @@
     --yellow:#fef661;
     --light-black:#9c9b9d;
     }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 h2{
     color:black;
     font-family: architype_demi;
@@ -180,11 +185,12 @@ font-weight:500;
 .lp-button-first i{
     margin-left: 2em;
 }
-.lp-button-first a:hover{
-    color: black;
-}
+/* .lp-button-first a:hover{
+    background-color: black;
+    color: white;
+} */
 .lp-button-first{
-    margin-top: 1em;
+    margin-top: 2em;
     bottom: auto;
 }
 .lcd-tv{
@@ -392,7 +398,7 @@ padding-top: 20px ;
     color: black;
 }
 .qr-payment:hover, .trading-portal:hover, .virtual-credit-card:hover{
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 60px 100px 0px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 5px 5px 0px;
 }
 .qr-content, .trading-content, .credit-card-content{
     margin-left: 4.2em;
@@ -432,7 +438,7 @@ padding-top: 20px ;
 
 /*Products section start -----=================//================================================== */
 .lp-products{
-    margin-top: 9em;
+    margin-top: 5em;
 }
 .lp-products h3{
     color: var(--dark-green);
@@ -459,31 +465,26 @@ padding-top: 20px ;
 .lp-featured-products i{
     color: var(--dark-green);
 }
-.carousel-cards{
+.lp-carousels .carousel-cards{
     width: 18rem;
     border-radius: 50px;
 }
-.carousel-cards .card-title{
+.lp-carousels .carousel-cards .card-title{
     color: black;
 }
-.carousel-cards:hover{
-    box-shadow: -2px 2px 11px 12px rgba(221,221,221,0.75);
-    -webkit-box-shadow: -2px 2px 11px 12px rgba(221,221,221,0.75);
-    -moz-box-shadow: -2px 2px 11px 12px rgba(221,221,221,0.75);  
+.lp-carousels .carousel-cards:hover{
+    box-shadow: rgba(17, 12, 46, 0.15) 3px 3px 3px 3px;
 }
-.carousel-cards:hover .read-more{
-    color: black;
-}
-.carousel-cards:hover .card-title{
+.lp-carousels .carousel-cards:hover .card-title{
     color: var(--dark-green);
 }
-.carousel-cards img{
+.lp-carousels .carousel-cards img{
     border-radius: 50px;
     padding: 8px;
     width: 285px;
     height: auto;
 }
-.slick-prev:before {
+.lp-carousels .slick-prev:before {
     color: #dbdddd;
     content: '\F12F';
     font-size: 25px;
@@ -493,28 +494,52 @@ padding-top: 20px ;
     border: 2px solid #dbdddd;
     padding: 12px;
     border-radius: 10px;
+    position: absolute;
+    right: 10px;
  }
-  .slick-next:before {
-    color: var(--dark-green) !important;
+
+  .lp-carousels .slick-next:before {
+    color: var(--dark-green);
     content: '\F138';
     font-family:'bootstrap-icons';
     font-weight: 600;
-    border: 3px solid #dbdddd;
-    color: white !important;
-    font-size: 25px !important;
+    color: white;
+    font-size: 25px;
     background-color: var(--dark-green);
     padding: 12px;
     border-radius: 10px;
-    margin-left:-20px;
+    position: relative;
+    left: -16px;
+    top: 0.9em;
 }
-.slick-next{
-    left: 16px !important;
+.lp-carousels .lp-featured-products .slick-next{
+    left: 16px;
 }
+/* @media only screen and (max-width: 767.98px) {
+    .lp-carousels .lp-featured-products .col{
+      flex:0 0 100% ;
+      width: 100%;
+    } 
+    .lp-carousels .lp-featured-products .col .marriage-cards img{
+      height: 300px;
+      object-fit: cover;
+    }
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  /* @media (min-width:768px)and (max-width: 1200px) {
+    .lp-carousels .lp-featured-products .col{
+    flex:0 0 50% ;
+  } 
+  } */ 
+
 /* End of products and featured products section==================================================== 8/
 
 Start of testimonial section ================================================================ */
 .lp-testimonial{
-    margin-top: 200px;
+
+    margin-top: 5em;
+    padding: 100px;
 }
 .lp-testimonial h4{
     text-align: center;
@@ -539,10 +564,10 @@ Start of testimonial section ===================================================
     
 }
 .testimonial-content slick-slide{
-    opacity: 0 !important;
+    opacity: 0 ;
 }
 .testimonial-content .slick-slide.slick-active{
-    opacity: 1 !important;
+    opacity: 1;
 }
 .testimonial-content p{
     margin-top: 30px;
@@ -555,9 +580,11 @@ Start of testimonial section ===================================================
 }
 .testimonial-content i{
     color: #fef661;
+    font-size: 22px;
+    padding: 8px;
 }
 .testimonial-ratings{
-    margin-top: 50px;
+    margin-top: 3.5em;
 }
 ul.slick-dots li button::before {
     font-size: 20px;
@@ -568,20 +595,30 @@ ul.slick-dots li button::before {
 }
 .testimonial-content h5{
     color: white;
-    font-size: 10px;
+    font-size: 11px;
     letter-spacing: 2px;
+    font-family: tw_regular;
 }
 
 .testimonial-content img{
     margin-top: -150px;
     position: relative;
     z-index: 100;
-    overflow: visible !important;
+    overflow: visible;
 }
-.slick-prev:before{
-    margin-left: -30px;
-    opacity: 1 !important;
+.lp-carousels .slick-prev:before{
+   position: absolute;
+   right: 1px;
 }
+.lp-carousels .testimonial-content .slick-next:before{
+    position: absolute;
+    left: 2px;
+}
+.lp-carousels .testimonial-content ul.slick-dots li button::before{
+    margin-top: 1.5em;
+    column-gap: 1em;
+}
+
 /* End of testimonial section */
 
 /* FAQ section and accordion===================================== */
@@ -601,6 +638,7 @@ ul.slick-dots li button::before {
     width: 50%;
     position: relative;
     top: 10px;
+    border: none;
 }
 .accordion-content{
     border: 2px solid green;
