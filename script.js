@@ -1,18 +1,19 @@
 
 $('.lp-featured-products').slick({
-  centerMode: true,
+  centerMode: false,
   centerPadding: '60px',
   slidesToShow: 3,
+
   
   responsive: [
     {
       breakpoint: 768,
       settings: {
-        arrows: false,
+        arrows:true,
         centerMode: true,
         centerPadding: '40px',
         slidesToShow: 3,
-        
+
       }
     },
     {
@@ -26,6 +27,7 @@ $('.lp-featured-products').slick({
     }
   ]
 })
+
 
 
 
