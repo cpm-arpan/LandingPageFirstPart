@@ -7,23 +7,31 @@ $('.lp-featured-products').slick({
   
   responsive: [
     {
-      breakpoint: 768,
-      settings: {
+      breakpoint: 1024,
+settings:{
         arrows:true,
         centerMode: true,
         centerPadding: '40px',
-        slidesToShow: 3,
-
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
+        slidesToShow: 2,
+        slidesToScroll:1,
+}},
+{
+  breakpoint: 768,
+settings:{
+    arrows:true,
+    centerMode: true,
+    centerPadding: '10px',
+    slidesToShow: 2,
+    slidesToScroll:1,
+}},
+ {
+      breakpoint: 576,
+settings:{
         arrows: true,
         centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
+        centerPadding: '10px',
+        slidesToShow: 1,
+    }
     }
   ]
 })
@@ -33,7 +41,6 @@ $('.lp-featured-products').slick({
 
 
 // Slider 2nd for testimonial section=============
-
 $('.testimonial-content').slick({
   dots: true,
   infinite: true,

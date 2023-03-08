@@ -1,5 +1,6 @@
 /* Landing Page css 
 =========================================================////=======================================////=================================== */
+/* Defining the fonts========================================== */
 @font-face {
     font-family: 'architype_bold';
     src: url('webfontkit-20230221-020521/archityperenner-bold-webfont.woff2') format('woff2'),
@@ -57,7 +58,6 @@
 
 }
 
-
 @font-face {
     font-family: 'slickbold';
     src: url('slick-webfont.woff2') format('woff2'),
@@ -79,6 +79,7 @@
 }
 h1{
     font-size: 54px;
+    font-family: architype_demi;
 }
 h2{
     color:black;
@@ -99,7 +100,19 @@ p{
 a{
     text-decoration: none;
 }
-
+@media screen and (max-width:576px){
+    h1 {
+        font-size: 36px !important;
+    }
+    h3{
+        font-size: 28px !important;
+        font-weight: 700 !important;
+    }
+    h2{
+        font-size: 36px !important;
+        line-height: 48px !important;
+    }
+}
 /*Navigation bar css ====================================================================================== */
 /* .lp-navigation-bar{
     background-image: url("top1.jpg");
@@ -110,8 +123,7 @@ a{
     
     
 } */
- 
-.smarTech{
+ .smarTech{
     color: var(--dark-green);
 }
 .lp-navigation-bar .navbar-brand{
@@ -153,6 +165,17 @@ a{
     .lp-navigation-bar .navbar-light .navbar-nav .nav-link.active::after{
         display: none;
     }  
+}
+@media only screen and (max-width: 767.98px){
+    .logo-bg img{
+        width: 250px;
+    }
+}
+@media only screen and (max-width: 767.98px){
+    .lp-responsive-spacing{
+        padding: 20px 10px;
+        margin: 0;
+    }
 }
 /*Nav section end============================================================== */
 
@@ -197,14 +220,8 @@ line-height: 24px;
 .lp-banner-section .lp-button-first{
     position: relative;
     top: 15px;
-   
 
 }
-/* .lp-button-first a:hover{
-    background-color: black;
-    color: white;
-} */
-
 .lcd-tv{
     float: right;
 }
@@ -231,6 +248,24 @@ line-height: 24px;
     font-size:12px ;
     font-weight: 100;
 }
+@media screen and (max-width:992px) {
+    .lp-banner-section .col-md-6{
+        width: 100%;
+    }
+    
+}
+@media only screen and (max-width:768px){
+    .lp-banner-section, .lp-banner-description, .lp-banner-heading
+    {
+        text-align: center;
+    }
+    .lp-horizontal-line-2{
+        margin-left: 0;
+    }
+    .lp-banner-section .lp-button-first{
+
+    }
+}
 /* Banner section end================================================ */
 
 /* Quote section start ========================================== */
@@ -243,7 +278,6 @@ line-height: 24px;
 .lp-quote-title h4, .lp-quote-topic h3, .lp-quote-description p{
     text-align: center;
     color: #ffffff;
-    padding-left: 3em;
 }
 .lp-quote-topic,.lp-quote-description{
     padding-top: 0.6em;
@@ -264,13 +298,12 @@ line-height: 24px;
     position: absolute;
     left: 0;
     top: 0px;
-    width: 150px;
+    width: 100px;
     z-index: 2;
-    
 }
 .quote-bg1 img{
     transform: rotate(180deg);
-    width: 150px;
+    width: 100px;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -288,7 +321,6 @@ line-height: 24px;
     border-radius: 12px;
     padding: 16px 15px;
     width: 200px;
-   
 }
 .lp-package .lp-button-first a{
     color: white;
@@ -311,7 +343,6 @@ line-height: 24px;
     font-size: 44px;
     line-height: 1.5em ;
     font-weight:600;
-    
 }
 
 /* for the light bulb icon ============== */
@@ -359,8 +390,7 @@ padding: 20px ;
     padding: 20px;
     border: 2px solid whitesmoke;
 }
-.diamond
-{
+.diamond{
     color: var(--light-green);
     background-color:#daebe4 ;
     border-radius: 35%;
@@ -368,9 +398,23 @@ padding: 20px ;
 }
 .package-section-bg img{
     margin-top: 3em;
-    width: 150px;
+    width: 140px;
     position: absolute;
     left: 0;
+}
+@media only screen and (max-width: 992px) {
+.package-section-bg{
+    display: none;
+}
+.lp-package .package-paragraph{
+    width: 100%;
+}
+}
+@media only screen and (max-width: 768px){
+    .package-paragraph, .firstPackage, .secondPackage{
+        text-align: center;
+        padding: 10px 0px ;
+    }
 }
 /*After hover effects for packages=================== */
 .firstPackage:hover, .secondPackage:hover {
@@ -397,9 +441,8 @@ padding: 20px ;
     width: 100%;
 }
 .services-upper h3{
-    width: 180px;
+    width: 100%;
 }
-
 .lp-about-us h3{
     text-align: center;
     margin-top: 120px;
@@ -418,6 +461,7 @@ padding: 20px ;
 .lp-about-us p span{
     font-weight: 900;
 }
+
 /*about us section end ===============================//-====== /*
 
 /* Services section start==================//=============== */
@@ -448,13 +492,16 @@ padding: 20px ;
 .qr-content, .trading-content, .credit-card-content{
     margin-left: 2em;
 }
+@media screen and (max-width: 768px){
+    .qr-content, .trading-content, .credit-card-content{
+        width: 100%;
+    }
+}
 .qr-payment img, .trading img, .credit-card img{
     width: 50px;
     padding-left: 12px;
     height: auto;
 }
-
-
 .virtual-credit-card,.trading-portal, .qr-payment{
     border: 2px solid rgb(247, 242, 242);
     border-radius: 15px;
@@ -476,12 +523,31 @@ padding: 20px ;
     float: right;
     margin-top: 80px;
     margin-right: 80px;
-    
 }
+@media screen and (max-width:1200px){
+.services-images .lp-services-image{
+width: 70%;
+}
+}
+@media screen and (max-width:768px){
+    .services-images .lp-services-image{
+        width: 100%;
+        margin-right: 0;
+    }
+    .lp-more-services{
+        margin-top: -20px;
+    }
+}
+
 .services-bg{
     position: absolute;
     right: 0;
-    width: 200px;
+    width: 150px;
+}
+@media screen and (max-width:576px){
+    .services-bg{
+        width: 80px;
+    }
 }
 /* Service section end =========================// ============================================== */
 
@@ -547,8 +613,7 @@ padding: 20px ;
     padding: 10px;
     border-radius: 10px;
     position: absolute;
-
- }
+}
 
   .lp-carousels .slick-next:before {
     color: var(--dark-green);
@@ -573,6 +638,16 @@ padding: 20px ;
     border-radius: 50px;
     filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.6));
 }
+@media screen and (max-width:768px){
+    .lp-products h3, .lp-products h2, .lp-products p{
+        text-align: center;
+        padding: 10px 0;
+    }
+    .lp-products{
+        margin-top: -16px;
+    }
+}
+
 /* @media only screen and (max-width: 767.98px) {
     .lp-carousels .lp-featured-products .col{
       flex:0 0 100% ;
@@ -608,6 +683,17 @@ Start of testimonial section ===================================================
     /* 06a871 04734e */
     font-size: 42px;
 }
+@media screen and (max-width:992px){
+   .lp-testimonial h2{
+    margin-inline-start: 10px;
+    position: relative;
+    top: -150px;
+   }
+   .lp-testimonial h4{
+    position: relative;
+    top: -150px;
+   }
+}
 .testimonial-content{
     background: rgb(2,0,36);
     background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(6,168,113,1) 0%, rgba(4,115,78,1) 100%);
@@ -620,11 +706,9 @@ Start of testimonial section ===================================================
     overflow-x: clip;
     
 }
-
 .testimonial-content slick-slide{
     opacity: 0 ;
 }
-
 .testimonial-content p{
     margin-top: 30px;
     color: white;
@@ -632,7 +716,6 @@ Start of testimonial section ===================================================
     font-style: italic;
     word-spacing: 2px;
     font-size: 20px;
-
 }
 .testimonial-content i{
     color: #fef661;
@@ -688,34 +771,76 @@ top: -120px;
 left: -40px;
 transform: rotate(-2deg);
 }
+@media screen and (max-width:992px){
+    .testimonial-content .testimonial-slider img{
+        width: 100%;
+    }
+    .lp-quotations img{
+        width: 150px;
+        position:relative;
+        top: 20px;
+        left: 10px;
+    }
+}
+
+@media screen and (max-width:576px){
+    .lp-quotations img{
+        width: 100px;
+        position:relative;
+        top: 45px;
+        left: 10px;
+    }
+}
+@media only screen and (max-width: 767.98px){
+    .testimonial-content p, .testimonial-content h3, .testimonial-content h5{
+        padding: 10px;
+    }
+    .testimonial-ratings i{
+        font-size: 18px;
+    }
+    .testimonial-content .testimonial-slider img{
+        width: 250px;
+        height: auto;
+    }
+    .testimonial-content{
+        padding-left: 20px;
+    }
+}
 /* End of testimonial section */
 
 /* FAQ section and accordion===================================== */
-.lp-faq{
-    position: relative;
-    left: 100px;
-}
+
 .lp-accordion.accordion-lists .accordion-number-lists{
     color:green;
 }
 .lp-accordion .accordion-item  .accordion-header .accordion-lists{
     display: flex ;
-    column-gap: 35px;
+    column-gap: 30px;
 }
 .lp-accordion .accordion-item{
     margin-top: 20px;
-    padding-top: 20px;
     position: relative;
-    top: 10px;
+    top: 20px;
     border: none;
     width: 85%;
 }
+@media screen and (max-width:992px){
+    .lp-accordion .accordion-item{
+        width: 100%;
+    }
+}
+@media screen and (max-width:768px){
+    .lp-faq h2{
+        text-align: center;
+    }
+}
+
 .accordion-content{
     border: 2px solid green;
     border-radius: 40px;
 }
 .lp-accordion .accordion-header{
-    padding:4px 25px;
+    padding:4px 20px;
 }
 .lp-accordion .accordion-button:not(.collapsed){
     color: green;
@@ -749,6 +874,14 @@ transform: rotate(-2deg);
     width: 500px;
     color: rgb(24, 23, 23);
 }
+@media screen and (max-width:768px){
+.lp-accordion .accordion-title{
+    width:100%;
+}
+.lp-accordion .accordion-content .content{
+    width: 70%;
+}
+}
 .lp-accordion .content{
     font-family:architype_medium;
     font-weight: 200;
@@ -767,6 +900,7 @@ transform: rotate(-2deg);
 
 .footer-services{
     display: flex;
+    justify-content: end;
 }
 .lp-footer-content{
     margin-top: 200px;
@@ -774,6 +908,7 @@ transform: rotate(-2deg);
 .lp-footer-content h2 span{
     color: var(--dark-green);
 }
+
 .lp-footer-content ul li a{
     text-decoration: underline;
     color: var(--light-black);
@@ -819,4 +954,16 @@ transform: rotate(-2deg);
 }
 .social-media-links ul li{
     list-style-type: none;
+}
+@media screen and (max-width:768px){
+    .lp-footer-content h1{
+        text-align: center;
+    }
+    .lp-footer-content .footer-services{
+        justify-content: center;
+    }
+    .footer-below ul{
+        column-gap: 16px;
+        
+    }
 }
